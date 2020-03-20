@@ -1,0 +1,25 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/function";
+
+// @import 'vendors';
+
+@import "base/reset";
+@import "base/typography";
+
+@import "layout/navigation";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/wrapper";
+@import "layout/hero";
+@import "layout/factories";
+@import "layout/optimize";
+@import "layout/industries";
+@import "layout/operations";
+@import "layout/data";
+
+@import "components/buttons";
+@import "components/dropdown";
+
+@import "pages/home";
+@import "pages/contact";

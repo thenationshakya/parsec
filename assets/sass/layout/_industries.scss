@@ -1,0 +1,123 @@
+.industries {
+  @extend .optimize;
+  margin: 10px auto;
+
+  .industries-text {
+    @extend .optimize-text;
+    margin: 0px;
+  }
+
+  .industries-slider {
+    position: relative;
+    margin: 50px auto;
+
+    height: 400px;
+    width: 100%;
+
+    .industries-slider-arrow__left,
+    .industries-slider-arrow__right {
+      position: absolute;
+      top: 43%;
+      text-align: center;
+      color: grey;
+      background: white;
+      font-size: 2em;
+      line-height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      z-index: 10;
+      cursor: pointer;
+      box-shadow: 0px 3px 100px rgba(0, 0, 0, 0.2);
+    }
+
+    .industries-slider-arrow__right {
+      right: 0;
+      @include respond(lg) {
+        right: -30px;
+      }
+    }
+    @include respond(lg) {
+      .industries-slider-arrow__left {
+        left: -30px;
+      }
+    }
+
+    .industries-slider-content {
+      position: relative;
+      width: 97%;
+      height: 100%;
+      margin: 0 auto;
+      border-radius: 15px;
+      display: flex;
+      box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      .slider {
+        .slider-wrapper {
+          display: flex;
+          background: white;
+
+          .industries-slider-content__img {
+            width: 100%;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+
+            &::after {
+              content: "";
+              width: 500px;
+              height: 700px;
+              background: white;
+              position: absolute;
+              left: 500px;
+              top: -110px;
+              transform: rotateZ(-15deg);
+            }
+          }
+          .industries-slider-content__text {
+            height: 100%;
+            padding: 30px;
+            margin: 10px;
+
+            h3 {
+              font-size: 1.8em;
+            }
+            p {
+              font-size: 1.2em;
+            }
+            .btn {
+              height: 60px;
+              width: 200px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: #2d8bff;
+              border-radius: 50px;
+              i {
+                font-size: 3em;
+                padding: 10px;
+              }
+
+              a {
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                font-size: 1.1 em;
+              }
+            }
+          }
+
+          @include respond(lg) {
+            .industries-slider-content__img {
+              display: none;
+            }
+
+            .industries-slider-content__text {
+              padding: 0;
+              margin: 0 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

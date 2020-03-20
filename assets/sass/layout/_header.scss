@@ -1,0 +1,55 @@
+header {
+  width: 80%;
+  margin: 0px auto;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  .logo {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -50px;
+      right: -175px;
+      width: 500px;
+      height: 500px;
+      background: rgba($color: #fff, $alpha: 0.1);
+      border-radius: 50%;
+    }
+  }
+
+  .toggle-menu {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    display: none;
+    width: auto;
+    height: auto;
+    margin: 20px 20px;
+    text-align: center;
+    cursor: pointer;
+
+    &::before {
+      content: "\f0c9";
+      font-family: fontAwesome;
+      line-height: 40px;
+      color: white;
+    }
+
+    @include respond(xl) {
+      display: block;
+    }
+  }
+}
+
+.toggle-menu.active {
+  &::before {
+    content: "\f00d";
+  }
+}

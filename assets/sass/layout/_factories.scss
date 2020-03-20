@@ -1,0 +1,27 @@
+.factories {
+  width: 80%;
+  margin: 40px auto;
+  .factories-text {
+    text-align: center;
+    font-size: 30px;
+  }
+  .factories-logos {
+    ul {
+      margin: 50px 0px;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      li {
+        list-style: none;
+        a {
+          img {
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+}

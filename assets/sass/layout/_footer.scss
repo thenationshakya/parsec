@@ -1,0 +1,42 @@
+footer {
+  display: flex;
+  width: 80%;
+  margin: 30px auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  h1 {
+    color: #2d8bff;
+  }
+
+  li {
+    list-style: none;
+    padding: 5px 0;
+  }
+
+  a,
+  p {
+    text-decoration: none;
+    color: grey;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  .footer-r1 {
+    p {
+      color: black;
+      font-weight: bold;
+    }
+
+    .copyright {
+      color: grey;
+      font-weight: normal;
+    }
+
+    a {
+      font-weight: bold;
+    }
+  }
+}

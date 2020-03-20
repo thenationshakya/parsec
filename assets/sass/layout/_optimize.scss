@@ -1,0 +1,92 @@
+.optimize {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 40px auto;
+  p {
+    color: rgb(117, 117, 117);
+  }
+  .optimize-text {
+    text-align: center;
+    margin-bottom: 5em;
+    h4 {
+      font-size: 2.5em;
+      font-weight: normal;
+    }
+    p {
+      margin: auto;
+      font-size: 1.3em;
+      width: 70%;
+    }
+  }
+
+  .optimize-dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .optimize-dashboard-points {
+      // width: 50%;
+      padding: 20px;
+      h4 {
+        font-size: 1.8em;
+      }
+      p {
+        font-size: 1.2em;
+      }
+      .list {
+        .list-points {
+          display: flex;
+          justify-content: center;
+          margin: 60px 0px;
+          position: relative;
+
+          .list-points__text {
+            padding: 0px;
+            margin: 0px 15px;
+            text-align: left;
+            h4 {
+              margin: 0px;
+              padding: 10px 0;
+              font-size: 1.6em;
+              font-weight: normal;
+            }
+            p {
+              margin: 0px;
+            }
+          }
+          .list-points__icon {
+            margin: 15px 0;
+            height: 50px;
+            min-width: 50px;
+            text-align: center;
+            font-size: 1.2em;
+            background: rgb(223, 229, 255);
+            color: rgb(143, 121, 255);
+            border-radius: 50%;
+            line-height: 50px;
+          }
+        }
+      }
+    }
+    .optimize-dashboard-img {
+      img {
+        height: 600px;
+        width: 80%;
+        padding-left: 100px;
+      }
+    }
+  }
+}
+@include respond(xl) {
+  .optimize {
+    .optimize-text {
+      p {
+        width: 100%;
+      }
+    }
+
+    .optimize-dashboard-img {
+      display: none;
+    }
+  }
+}

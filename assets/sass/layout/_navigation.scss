@@ -1,0 +1,35 @@
+nav {
+  width: 50%;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    li {
+      list-style: none;
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+      }
+    }
+  }
+}
+@include respond(xl) {
+  nav {
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    ul {
+      flex-direction: column;
+      padding-left: 0;
+      li {
+        text-align: center;
+        margin: 20px;
+      }
+    }
+  }
+  nav.active {
+    display: block;
+  }
+}

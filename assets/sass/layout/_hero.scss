@@ -1,0 +1,96 @@
+.hero {
+  width: 80%;
+  height: 60vh;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .hero-text {
+    h1 {
+      font-size: 3.4em;
+      margin: 10px;
+    }
+    p {
+      font-size: 1.5em;
+      margin: 10px;
+    }
+
+    .hero-btn {
+      background: none;
+      margin-top: 50px;
+      height: 60px;
+      width: 250px;
+      display: flex;
+      align-items: center;
+      background: rgba($color: #fff, $alpha: 0.3);
+      border-radius: 50px;
+      i {
+        font-size: 3em;
+        padding: 10px;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+      }
+    }
+  }
+  .hero-ss {
+    .hero-ss-wrapper {
+      position: relative;
+      z-index: 10;
+
+      .hero-ss-wrapper__top {
+        height: 500px;
+        filter: drop-shadow(10px 15px 5px rgba(0, 0, 0, 0.2));
+      }
+
+      .hero-ss-wrapper__bottom {
+        position: absolute;
+        right: 200px;
+        top: 400px;
+        height: 200px;
+        filter: drop-shadow(10px 15px 5px rgba(0, 0, 0, 0.2));
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -280px;
+        right: 80px;
+        width: 650px;
+        height: 650px;
+        background: rgba($color: #fff, $alpha: 0.1);
+        border-radius: 50%;
+        z-index: -1;
+      }
+    }
+  }
+}
+@include respond(xl) {
+  .hero {
+    .hero-ss {
+      display: none;
+    }
+
+    .hero-text {
+      h1 {
+        font-size: 2.5em;
+      }
+
+      p {
+        font-size: 1.2em;
+      }
+
+      .hero-btn {
+        margin-bottom: 50px;
+      }
+    }
+  }
+  .hero.active {
+    display: none;
+  }
+}
