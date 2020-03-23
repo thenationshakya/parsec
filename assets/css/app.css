@@ -666,11 +666,13 @@ footer {
               font-weight: bold;
               font-size: 1.1 em; }
         @media (max-width: 992px) {
-          .industries .industries-slider .industries-slider-content .slider .slider-wrapper .industries-slider-content__img {
-            display: none; }
-          .industries .industries-slider .industries-slider-content .slider .slider-wrapper .industries-slider-content__text {
-            padding: 0;
-            margin: 0 10px; } }
+          .industries .industries-slider .industries-slider-content .slider .slider-wrapper {
+            background: none; }
+            .industries .industries-slider .industries-slider-content .slider .slider-wrapper .industries-slider-content__img {
+              display: none; }
+            .industries .industries-slider .industries-slider-content .slider .slider-wrapper .industries-slider-content__text {
+              padding: 0;
+              margin: 0 10px; } }
 
 .operations .operations-dashboard {
   display: flex;

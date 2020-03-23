@@ -107,6 +107,7 @@
           }
 
           @include respond(lg) {
+            background: none;
             .industries-slider-content__img {
               display: none;
             }
